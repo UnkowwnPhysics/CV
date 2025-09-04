@@ -16,7 +16,7 @@ const Overview: React.FC = () => {
           <div className="profile-photo-container">
             {!imageError ? (
               <img 
-                src={`${process.env.PUBLIC_URL}/images/profile.jpg`} 
+                src={`${process.env.PUBLIC_URL}/images/profile.jpeg`} 
                 alt="Luís David Ferreira da Silva" 
                 className="profile-photo"
                 onError={() => setImageError(true)}
@@ -112,6 +112,7 @@ const Overview: React.FC = () => {
 };
 
 export default Overview;
+
 
 
 
