@@ -119,10 +119,14 @@
     grid-template-columns: 1fr;
   }
 
-  .profile-avatar {
-    width: 50px;
-    height: 50px;
-    top: 0.5rem;
-    left: 0.5rem;
-  }
+.profile-avatar {
+  width: 40px;      /* Bem pequeno */
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #fff;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
