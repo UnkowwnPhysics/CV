@@ -1,0 +1,142 @@
+.projects-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.projects-header {
+  background: #4a6fc7;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.projects-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.projects-header p {
+  margin: 0.5rem 0 0;
+  opacity: 0.9;
+}
+
+.projects-content {
+  padding: 2rem;
+}
+
+.project-item {
+  display: flex;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item:last-child {
+  margin-bottom: 0;
+}
+
+.project-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4a6fc7;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.project-details {
+  flex-grow: 1;
+}
+
+.project-details h3 {
+  margin: 0 0 0.5rem;
+  color: #2c3e50;
+  font-size: 1.3rem;
+}
+
+.project-period {
+  margin: 0 0 1rem;
+  color: #7f8c8d;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.project-description {
+  color: #5a6268;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-description p {
+  margin: 0 0 1rem;
+}
+
+.project-description ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.project-description li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.project-description li:before {
+  content: "•";
+  color: #4a6fc7;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a6fc7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  padding: 0.5rem 1rem;
+  background: rgba(74, 111, 199, 0.1);
+  border-radius: 5px;
+}
+
+.project-link:hover {
+  color: #3a5bb0;
+  background: rgba(74, 111, 199, 0.2);
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    margin: 1rem;
+  }
+  
+  .project-item {
+    flex-direction: column;
+  }
+  
+  .project-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    align-self: center;
+  }
+}
