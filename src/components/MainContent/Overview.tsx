@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Overview.css';
 
 const Overview: React.FC = () => {
-  const [imageError, setImageError] = useState(false);
-
   return (
     <div className="overview-container">
       <div className="overview-header">
@@ -13,19 +11,10 @@ const Overview: React.FC = () => {
       
       <div className="overview-content">
         <div className="profile-section">
-          <div className="profile-photo-container">
-            {!imageError ? (
-              <img 
-                src={`${process.env.PUBLIC_URL}/images/profile.jpeg`} 
-                alt="Luís David Ferreira da Silva" 
-                className="profile-photo"
-                onError={() => setImageError(true)}
-              />
-            ) : (
-              <div className="profile-photo-placeholder">
-                <i className="fas fa-user"></i>
-              </div>
-            )}
+          <div className="profile-icon-container">
+            <div className="profile-icon">
+              <i className="fas fa-user"></i>
+            </div>
             <div className="photo-overlay">
               <span>Physical Engineering Student</span>
             </div>
@@ -112,6 +101,7 @@ const Overview: React.FC = () => {
 };
 
 export default Overview;
+
 
 
 
