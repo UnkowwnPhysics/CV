@@ -1,1 +1,123 @@
+.education-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
+.education-header {
+  background: #4a6fc7;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.education-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.education-header p {
+  margin: 0.5rem 0 0;
+  opacity: 0.9;
+}
+
+.education-content {
+  padding: 1.5rem 2rem;
+}
+
+.education-item {
+  display: flex;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+}
+
+.education-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4a6fc7;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.education-details {
+  flex-grow: 1;
+}
+
+.education-details h3 {
+  margin: 0 0 0.5rem;
+  color: #2c3e50;
+  font-size: 1.3rem;
+}
+
+.education-institution {
+  margin: 0 0 0.3rem;
+  color: #4a6fc7;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.education-degree, .education-period {
+  margin: 0 0 0.5rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.education-description {
+  margin: 0.8rem 0;
+  color: #5a6268;
+  line-height: 1.5;
+}
+
+.education-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a6fc7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.education-link:hover {
+  color: #3a5bb0;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .education-container {
+    margin: 1rem;
+  }
+  
+  .education-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .education-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    align-self: center;
+  }
+}
