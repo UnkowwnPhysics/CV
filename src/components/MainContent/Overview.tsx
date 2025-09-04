@@ -12,10 +12,11 @@ const Overview: React.FC = () => {
       <div className="overview-content">
         <div className="profile-section">
           <div className="profile-icon-container">
-            <div className="profile-icon">
-              {/* Pode colocar uma letra inicial ou deixar vazio */}
-              L
-            </div>
+            <img 
+              src="/images/profile.jpeg" 
+              alt="Profile" 
+              className="profile-image"
+            />
             <div className="photo-overlay">
               <span>Physical Engineering Student</span>
             </div>
@@ -86,6 +87,7 @@ const Overview: React.FC = () => {
 };
 
 export default Overview;
+
 
 
 
