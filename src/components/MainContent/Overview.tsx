@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Overview.css';
 
-// Import your photo - make sure to place your image in the src/assets folder
-// If you don't have a photo yet, you can use a placeholder
-import profilePhoto from 'CV/src/assets/profile.jpeg'; // Update this path to your actual photo
-
 const Overview: React.FC = () => {
+  const [imageError, setImageError] = useState(false);
+
   return (
     <div className="overview-container">
       <div className="overview-header">
@@ -16,11 +14,18 @@ const Overview: React.FC = () => {
       <div className="overview-content">
         <div className="profile-section">
           <div className="profile-photo-container">
-            <img 
-              src={profilePhoto} 
-              alt="Luís David Ferreira da Silva" 
-              className="profile-photo"
-            />
+            {!imageError ? (
+              <img 
+                src={`${process.env.PUBLIC_URL}/images/profile.jpg`} 
+                alt="Luís David Ferreira da Silva" 
+                className="profile-photo"
+                onError={() => setImageError(true)}
+              />
+            ) : (
+              <div className="profile-photo-placeholder">
+                <i className="fas fa-user"></i>
+              </div>
+            )}
             <div className="photo-overlay">
               <span>Physical Engineering Student</span>
             </div>
@@ -107,5 +112,6 @@ const Overview: React.FC = () => {
 };
 
 export default Overview;
+
 
 
