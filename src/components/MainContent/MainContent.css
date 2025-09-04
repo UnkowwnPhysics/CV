@@ -1,0 +1,85 @@
+.technologies {
+  margin: 15px 0;
+}
+
+.tech-tag {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 5px 5px 5px 0;
+  font-size: 0.8em;
+}
+
+.company-period {
+  margin: 10px 0;
+  color: #7f8c8d;
+}
+
+.skills-container {
+  margin-top: 15px;
+}
+
+.skill-item {
+  margin-bottom: 15px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skill-name {
+  font-weight: bold;
+}
+
+.skill-percentage {
+  color: #7f8c8d;
+}
+
+.skill-bar {
+  height: 8px;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: #3498db;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+}

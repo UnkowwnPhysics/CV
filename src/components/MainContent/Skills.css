@@ -1,0 +1,149 @@
+.skills-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.skills-header {
+  background: #4a6fc7;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.skills-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.skills-header p {
+  margin: 0.5rem 0 0;
+  opacity: 0.9;
+}
+
+.skills-legend {
+  padding: 1.5rem 2rem;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.skills-legend h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.legend-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.legend-item .skill-circle {
+  width: 16px;
+  height: 16px;
+}
+
+.skills-list {
+  padding: 1.5rem 2rem;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.skill-item:last-child {
+  border-bottom: none;
+}
+
+.skill-info {
+  flex: 1;
+}
+
+.skill-info h3 {
+  margin: 0 0 0.5rem;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.skill-info p {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.skill-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.skill-level {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.skill-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.skill-circle.filled {
+  background: #4a6fc7;
+  border: 2px solid #4a6fc7;
+}
+
+.skill-circle.empty {
+  background: transparent;
+  border: 2px solid #dee2e6;
+}
+
+.skill-level-text {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    margin: 1rem;
+  }
+  
+  .skill-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .skill-visual {
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .legend-items {
+    gap: 0.5rem;
+  }
+  
+  .legend-item {
+    flex-wrap: wrap;
+  }
+}
