@@ -1,1 +1,123 @@
+.experience-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
+.experience-header {
+  background: #4a6fc7;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.experience-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.experience-header p {
+  margin: 0.5rem 0 0;
+  opacity: 0.9;
+}
+
+.experience-content {
+  padding: 1.5rem 2rem;
+}
+
+.experience-item {
+  display: flex;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+.experience-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4a6fc7;
+  color: white;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.experience-details {
+  flex-grow: 1;
+}
+
+.experience-details h3 {
+  margin: 0 0 0.5rem;
+  color: #2c3e50;
+  font-size: 1.3rem;
+}
+
+.experience-period {
+  margin: 0 0 1rem;
+  color: #7f8c8d;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.experience-description {
+  color: #5a6268;
+  line-height: 1.6;
+}
+
+.experience-description p {
+  margin: 0 0 1rem;
+}
+
+.experience-description ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.experience-description li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.experience-description li:before {
+  content: "•";
+  color: #4a6fc7;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+@media (max-width: 768px) {
+  .experience-container {
+    margin: 1rem;
+  }
+  
+  .experience-item {
+    flex-direction: column;
+  }
+  
+  .experience-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    align-self: center;
+  }
+}
