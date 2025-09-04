@@ -3,7 +3,7 @@ import './Overview.css';
 
 // Import your photo - make sure to place your image in the src/assets folder
 // If you don't have a photo yet, you can use a placeholder
-import profilePhoto from '../assets/profile.jpg'; // Update this path to your actual photo
+import profilePhoto from '../assets/profile.jpeg'; // Update this path to your actual photo
 
 const Overview: React.FC = () => {
   return (
@@ -107,3 +107,4 @@ const Overview: React.FC = () => {
 };
 
 export default Overview;
+
