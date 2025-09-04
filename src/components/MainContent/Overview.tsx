@@ -5,37 +5,29 @@ const Overview: React.FC = () => {
   return (
     <div className="overview-container">
       <div className="overview-header">
+        <img 
+          src="/images/profile.jpeg" 
+          alt="Profile" 
+          className="profile-avatar"
+        />
         <h1>Professional Overview</h1>
         <p>Get to know me better</p>
       </div>
       
       <div className="overview-content">
-        <div className="profile-section">
-          <div className="profile-icon-container">
-            <img 
-              src="/images/profile.jpeg" 
-              alt="Profile" 
-              className="profile-image"
-            />
-            <div className="photo-overlay">
-              <span>Physical Engineering Student</span>
-            </div>
+        <div className="profile-details">
+          <h2>Luís David Ferreira da Silva</h2>
+          <div className="detail-item">
+            <span>21 years old</span>
           </div>
-          
-          <div className="profile-details">
-            <h2>Luís David Ferreira da Silva</h2>
-            <div className="detail-item">
-              <span>21 years old</span>
-            </div>
-            <div className="detail-item">
-              <span>Madeira, Portugal</span>
-            </div>
-            <div className="detail-item">
-              <span>Final Year Physics Engineering Student</span>
-            </div>
-            <div className="detail-item">
-              <span>University of Minho</span>
-            </div>
+          <div className="detail-item">
+            <span>Madeira, Portugal</span>
+          </div>
+          <div className="detail-item">
+            <span>Final Year Physics Engineering Student</span>
+          </div>
+          <div className="detail-item">
+            <span>University of Minho</span>
           </div>
         </div>
         
@@ -87,11 +79,3 @@ const Overview: React.FC = () => {
 };
 
 export default Overview;
-
-
-
-
-
-
-
-
