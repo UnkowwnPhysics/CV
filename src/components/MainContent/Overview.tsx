@@ -13,8 +13,7 @@ const Overview: React.FC = () => {
         <div className="profile-section">
           <div className="profile-icon-container">
             <div className="profile-icon">
-              {/* Pode colocar uma letra inicial ou deixar vazio */}
-              L
+              <i className="fas fa-user"></i>
             </div>
             <div className="photo-overlay">
               <span>Physical Engineering Student</span>
@@ -24,15 +23,19 @@ const Overview: React.FC = () => {
           <div className="profile-details">
             <h2>Luís David Ferreira da Silva</h2>
             <div className="detail-item">
+              <i className="fas fa-user"></i>
               <span>21 years old</span>
             </div>
             <div className="detail-item">
+              <i className="fas fa-map-marker-alt"></i>
               <span>Madeira, Portugal</span>
             </div>
             <div className="detail-item">
+              <i className="fas fa-graduation-cap"></i>
               <span>Final Year Physics Engineering Student</span>
             </div>
             <div className="detail-item">
+              <i className="fas fa-university"></i>
               <span>University of Minho</span>
             </div>
           </div>
@@ -63,18 +66,30 @@ const Overview: React.FC = () => {
           <h3>At a Glance</h3>
           <div className="facts-grid">
             <div className="fact">
+              <div className="fact-icon">
+                <i className="fas fa-code"></i>
+              </div>
               <h4>Technical Skills</h4>
               <p>Python, C, CUDA, COMSOL, MATLAB</p>
             </div>
             <div className="fact">
+              <div className="fact-icon">
+                <i className="fas fa-flask"></i>
+              </div>
               <h4>Research Focus</h4>
               <p>Computational Physics & Simulation</p>
             </div>
             <div className="fact">
+              <div className="fact-icon">
+                <i className="fas fa-rocket"></i>
+              </div>
               <h4>Strengths</h4>
               <p>Problem-solving & Rapid Learning</p>
             </div>
             <div className="fact">
+              <div className="fact-icon">
+                <i className="fas fa-language"></i>
+              </div>
               <h4>Languages</h4>
               <p>Portuguese, English</p>
             </div>
