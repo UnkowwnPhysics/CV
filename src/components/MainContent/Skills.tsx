@@ -40,7 +40,7 @@ const Skills: React.FC = () => {
       description: "Basic knowledge in systems programming"
     },
     {
-      name: "C#",
+      name: "C++",
       level: 2,
       description: "Initial experience with .NET development"
     },
@@ -160,5 +160,6 @@ const Skills: React.FC = () => {
     </div>
   );
 };
+
 
 export default Skills;
