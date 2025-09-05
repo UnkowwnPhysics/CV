@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
           </div>
           <div className="contact-details">
             <h3>Email</h3>
-            <p>PixelTheMlgPro@gmail.com</p>
+            <p>davidferreiragithub@gmail.com</p>
           </div>
           <div className="contact-actions">
             <a 
@@ -91,5 +91,6 @@ const Contact: React.FC = () => {
     </div>
   );
 };
+
 
 export default Contact;
