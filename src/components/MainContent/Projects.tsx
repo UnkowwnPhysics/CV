@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
               </ul>
             </div>
             <a 
-              href="https://github.com/UnkowwnPhysics/3dfluid-main" 
+              href="https://github.com/UnkowwnPhysics/3dfluid-main-" 
               target="_blank" 
               rel="noopener noreferrer"
               className="project-link"
@@ -78,3 +78,4 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
+
